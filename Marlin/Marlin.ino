@@ -1,4 +1,21 @@
-/** Hipercubo/AR
+/** Hipercubo/AR V2
+ *  
+ *  inductivo :  Lj18a3-8-z/bx  NPN NO
+ *  
+ *  https://mertarauh.com/2017/01/18/dont-trust-the-internet-and-how-to-add-an-inductive-proximity-sensor-to-your-3d-printer-the-proper-and-easiest-way/
+ *  
+ *  If you have a NPN type of sensor, you should be able to measure the 10kΩ pull-up resistor between BROWN and BLACK.
+ *  all we need to do is add a single 6.8kΩ resistor between BLACK and BLUE and all should work fine.
+ *  OR se puede poner un diodo
+ *  https://mertarauh.com/wp-content/uploads/2018/05/Installing-a-proximity-sensor-using-a-diode-and-external-pull.pdf
+ *   
+ *   
+ *  Don’t forget that you do need to change your firmware because we still need to invert our end stop. It is HIGH when not triggered and LOW when triggered.
+ *  
+ *  const bool Z_MIN_ENDSTOP_INVERTING = true;
+ *  
+ *  
+ *  
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
